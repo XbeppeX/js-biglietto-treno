@@ -8,10 +8,13 @@ const sconto40 = 40 / 100;
 const totale2 = costoKm - (costoKm * sconto40).toFixed(2);
 
 if(numeroAnni<18){
-    alert(`Costo biglietto è:${totale}€`);
+    document.getElementById("total").innerHTML = totale;
 } else if(numeroAnni>=65){
-    alert(`Costo biglietto è:${totale2}€`);
+    document.getElementById("total").innerHTML = totale2;
 } else{
-    alert(`Costo biglietto è:${costoKm}€`);
+    document.getElementById("total").innerHTML = costoKm;
 }
 
+//document.getElementById("total").innerHTML = totale
+//document.getElementById("total").innerHTML = totale2
+//document.getElementById("total").innerHTML = totale
